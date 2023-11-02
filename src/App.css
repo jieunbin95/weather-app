@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+body{
+  background: url('https://images.unsplash.com/photo-1496450681664-3df85efbd29f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdlYXRoZXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  align-items: center;
+  /* contatiner의 높이값이 작아 높이를 최대한 늘어준 뒤, align-items값을 주었다 */
+}
+
+.container h1{
+  font-family: 'Song Myung', serif;
+  font-size: 45px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.box{
+  border: 1px solid #666;
+  width: 483px;
+  height: 250px;
+  box-shadow: 5px 5px 3px #666;
+  font-family: 'Song Myung', serif;
+  text-align: center;
+  transition: .5s;
+}
+
+.box:hover{
+  transform: scale(1.1);
+}
+
+.box .title{
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.box h2{
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: #444;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box h3{
+  font-size: 25px;
+  color: #d0cfcf;
+  margin-top: 15px;
+}
+
+.btn{
+  margin-top: 30px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 5px #444;
+  padding: 15px;
+}
+
+.btn button:last-child{
+  margin-right: 0;
 }
